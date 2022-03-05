@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet"/>
+    <link href="{% static 'pr/fontawesome/css/all.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'pr/css/templatemo-comparto.css' %}" rel="stylesheet"/>
+    <title>ONLINESHOP</title>
+
+
+    <!--Comparto TemplateMo-->
+
+    <!--https://templatemo.com/tm-544-comparto-->
+
+    <!--&ndash;&gt;-->
+</head>
+
+<body>
+<!-- Back to top button -->
+<br><br>
+<section class="tm-mb-1" id="about">
+    <div class="tm-row tm-about-row">
+        <div class="tm-section-1-l">
+            <img src="{{prductF.img.url}}" style="height:500px;width:500px;" alt="About image" class="tm-img-responsive">
+        </div>
+        <article class="tm-section-1-r tm-bg-color-8">
+            <h2 class="tm-mb-1 tm-title-color">{{prductF.name}}</h2>
+            <p> {{prductF.desc}}</p>
+            <p>Price:{{prductF.price}}Rs</p>
+            <p>Stock:{{prductF.stock}}</p>
+            <p>{{prductF.paid_or_free}}</p>
+           
+
+
+        
+        </article>
+      
+    </div>
+</section>
+
+</body>
+</html>
